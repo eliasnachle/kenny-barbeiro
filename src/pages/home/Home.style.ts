@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import backgroundImg from '../assets/background.png'
+import styled from '@emotion/styled';
+import backgroundImg from '../../assets/background.png';
 
 export const Container = styled('div')`
   background: #111;
@@ -14,7 +14,7 @@ export const Container = styled('div')`
     display: flex;
     justify-content: center;
   }
-`
+`;
 
 export const BarberBackground = styled('div')`
   width: 100%;
@@ -43,7 +43,7 @@ export const BarberBackground = styled('div')`
   @media screen and (max-width: 1280px) {
     display: none;
   }
-`
+`;
 
 export const ContainerInfo = styled('div')`
   display: flex;
@@ -52,7 +52,7 @@ export const ContainerInfo = styled('div')`
   @media screen and (max-width: 1280px) {
     width: 100%;
   }
-`
+`;
 
 export const CardBarber = styled('div')`
   display: grid;
@@ -88,7 +88,7 @@ export const CardBarber = styled('div')`
       max-width: 650px;
     }
   }
-`
+`;
 
 export const Footer = styled('div')`
   padding: 2em 50px;
@@ -105,4 +105,4 @@ export const Footer = styled('div')`
       font-size: 14px;
     }
   }
-`
+`;

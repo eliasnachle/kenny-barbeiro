@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const Navbar = styled('div')`
   background: #111;
@@ -13,7 +13,7 @@ export const Navbar = styled('div')`
       list-style: none;
     }
   }
-`
+`;
 
 export const NavbarLink = styled('a')`
   cursor: pointer;
@@ -24,11 +24,14 @@ export const NavbarLink = styled('a')`
   &:hover {
     opacity: 0.85;
   }
-`
+`;
 
 export const LogoNavbar = styled('div')`
-  span {
-    color: #fff;
-    font-weight: 200;
+  a {
+    text-decoration: none;
+    span {
+      color: #fff;
+      font-weight: 200;
+    }
   }
-`
+`;

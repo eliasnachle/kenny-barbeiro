@@ -1,7 +1,7 @@
 import * as Style from './Home.style';
-import Navbar from '../components/navbar/Navbar';
-import logoBarber from '../assets/kenny-barbeiro.png';
-import RedirectList from '../components/redirectList/RedirectList';
+import Navbar from '../../components/navbar/Navbar';
+import logoBarber from '../../assets/kenny-barbeiro.png';
+import RedirectList from '../../components/redirectList/RedirectList';
 import { motion } from 'framer-motion';
 
 export default function Home() {
