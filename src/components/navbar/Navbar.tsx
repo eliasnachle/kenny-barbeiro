@@ -1,7 +1,9 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../context/LanguageContext';
 import { Languagens } from '../../languagens/LanguagemEnum';
 import * as Style from './Navbar.style';
+import { IoMdMenu } from 'react-icons/io';
 
 export default function Navbar() {
   const { setLanguage } = useContext(LanguageContext);
@@ -13,10 +15,11 @@ export default function Navbar() {
   return (
     <>
       <Style.Navbar>
+        <IoMdMenu />
         <Style.LogoNavbar>
-          <a href="/">
+          <Link to="/">
             <span>Kenny Barbeiro</span>
-          </a>
+          </Link>
         </Style.LogoNavbar>
         <ul>
           <li>

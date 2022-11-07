@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar';
 import logoBarber from '../../assets/kenny-barbeiro.png';
 import RedirectList from '../../components/redirectList/RedirectList';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const backgroundAnimation = {
@@ -37,7 +38,11 @@ export default function Home() {
           >
             <Style.CardBarber>
               <motion.div>
-                <img src={logoBarber} alt="Kenny Barbeiro" />
+                <Style.CardBarberImg>
+                  <Link to="/about-kenny">
+                    <img src={logoBarber} alt="Kenny Barbeiro" />
+                  </Link>
+                </Style.CardBarberImg>
               </motion.div>
               <RedirectList />
             </Style.CardBarber>

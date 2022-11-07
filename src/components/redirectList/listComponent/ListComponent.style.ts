@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-export const Redirect = styled('a')`
+export const Redirect = styled('span')`
   text-decoration: none;
   transition: all ease-in 150ms;
   display: grid;
@@ -27,4 +27,10 @@ export const Redirect = styled('a')`
     opacity: 0.85;
     transform: scale(1.025);
   }
-`
+`;
+
+export const ListComponent = styled('div')`
+  a {
+    text-decoration: none;
+  }
+`;

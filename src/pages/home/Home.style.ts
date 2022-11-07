@@ -90,6 +90,10 @@ export const CardBarber = styled('div')`
   }
 `;
 
+export const CardBarberImg = styled('div')`
+  text-align: center;
+`;
+
 export const Footer = styled('div')`
   padding: 2em 50px;
   span {
