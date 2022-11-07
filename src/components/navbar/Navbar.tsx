@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <Style.Navbar>
-        <IoMdMenu />
+        {/* <IoMdMenu /> */}
         <Style.LogoNavbar>
           <Link to="/">
             <span>Kenny Barbeiro</span>
