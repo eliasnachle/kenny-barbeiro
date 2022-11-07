@@ -13,6 +13,9 @@ export const Navbar = styled('div')`
       list-style: none;
     }
   }
+  @media screen and (max-width: 920px) {
+    padding: 1em 15px;
+  }
 `;
 
 export const NavbarLink = styled('a')`
