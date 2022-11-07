@@ -14,7 +14,10 @@ export const Navbar = styled('div')`
     }
   }
   @media screen and (max-width: 920px) {
-    padding: 1em 15px;
+    padding: 1em 25px;
+    ul {
+      display: none;
+    }
   }
 `;
 
@@ -35,6 +38,52 @@ export const LogoNavbar = styled('div')`
     span {
       color: #fff;
       font-weight: 200;
+    }
+  }
+`;
+
+export const BurgerMenu = styled('div')`
+  display: none;
+  svg {
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 920px) {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled('div')`
+  transition: all ease-in-out 600ms;
+  left: -100%;
+  z-index: 999;
+  position: absolute;
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  div {
+    padding: 1em 25px;
+    svg {
+      color: #fff;
+      font-size: 2em;
+      cursor: pointer;
+    }
+  }
+  ul {
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3em;
+      a {
+        font-size: 25px;
+        border-bottom: 1.5px solid #424245;
+        width: 80%;
+        text-align: left;
+        padding: 10px 0;
+      }
     }
   }
 `;
