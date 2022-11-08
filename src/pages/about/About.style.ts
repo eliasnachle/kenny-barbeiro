@@ -51,5 +51,9 @@ export const Container = styled('div')`
     color: #fff;
     letter-spacing: 0.5px;
     line-height: 1.75em;
+    @media screen and (max-width: 920px) {
+      font-size: 14px;
+      font-weight: 300;
+    }
   }
 `;
