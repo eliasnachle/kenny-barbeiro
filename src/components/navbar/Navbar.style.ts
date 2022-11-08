@@ -62,6 +62,7 @@ export const MobileMenu = styled('div')`
   background: #000;
   height: 100vh;
   width: 100%;
+  top: 0;
   div {
     padding: 1em 25px;
     svg {

@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar/Navbar';
 import * as Style from './About.style';
 import backgroundImg from '../../assets/kenny.jpg';
 import { motion, useTransform, useScroll } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function About() {
   const { scrollYProgress } = useScroll();
@@ -23,6 +24,10 @@ export default function About() {
       transition: { ease: 'easeInOut', duration: 1.5, delay: 0.25 },
     },
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

@@ -33,7 +33,7 @@ export const ContainerImg = styled('div')`
   height: 50vh;
   overflow: hidden;
   width: 100%;
-  z-index: 9999;
+  z-index: 99;
   img {
     height: 50vh;
     object-fit: cover;
