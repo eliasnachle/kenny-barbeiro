@@ -6,7 +6,11 @@ import { useEffect } from 'react';
 
 export default function About() {
   const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [1, window.innerWidth > 600 ? 1.15 : 2.5]
+  );
   const divAnimation = {
     hidden: { opacity: 0, y: 15 },
     show: {
