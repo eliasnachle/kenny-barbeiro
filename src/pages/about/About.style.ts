@@ -15,4 +15,41 @@ export const Title = styled('h1')`
   font-weight: 400;
   letter-spacing: 1.5px;
   color: #fff;
+  @media screen and (max-width: 1920px) {
+    font-size: 8em;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 5em;
+  }
+  @media screen and (max-width: 720px) {
+    font-size: 3.5em;
+  }
+`;
+
+export const ContainerImg = styled('div')`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  width: 100%;
+  z-index: 9999;
+  img {
+    height: 50vh;
+    object-fit: cover;
+  }
+`;
+
+export const Container = styled('div')`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 3em;
+  p {
+    max-width: 1520px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.75em;
+  }
 `;

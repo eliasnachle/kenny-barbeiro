@@ -40,7 +40,7 @@ export default function Home() {
               <motion.div>
                 <Style.CardBarberImg>
                   <Link to="/about-kenny">
-                    <img src={logoBarber} alt="Kenny Barbeiro" />
+                    <motion.img src={logoBarber} alt="Kenny Barbeiro" />
                   </Link>
                 </Style.CardBarberImg>
               </motion.div>

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../context/LanguageContext';
 import { Languagens } from '../../languagens/LanguagemEnum';
@@ -17,7 +17,6 @@ export default function Navbar() {
   const handleLanguage = async (selectedLanguage: Languagens) => {
     setLanguage(selectedLanguage);
   };
-  const color = 'red';
 
   return (
     <>
