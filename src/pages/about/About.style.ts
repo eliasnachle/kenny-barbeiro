@@ -31,14 +31,23 @@ export const Container = styled('div')`
   flex-direction: column;
   align-items: center;
   padding: 2em 3em;
+  h1 {
+    font-family: 'Noto Serif Display', serif;
+    color: #fed168;
+    font-size: 5em;
+    letter-spacing: -1px;
+    padding-bottom: 1.5rem;
+  }
   p {
     max-width: 1520px;
-    font-size: 18px;
-    color: #fff;
+    font-size: 24px;
+    color: #efefef;
     letter-spacing: 0.5px;
     line-height: 1.75em;
+    white-space: break-spaces;
+    font-weight: 300;
     @media screen and (max-width: 920px) {
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 300;
     }
   }
