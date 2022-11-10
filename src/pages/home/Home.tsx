@@ -4,6 +4,7 @@ import logoBarber from '../../assets/kenny-barbeiro.png';
 import RedirectList from '../../components/redirectList/RedirectList';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Home() {
   const backgroundAnimation = {
@@ -40,7 +41,11 @@ export default function Home() {
               <motion.div>
                 <Style.CardBarberImg>
                   <Link to="/about-kenny">
-                    <motion.img src={logoBarber} alt="Kenny Barbeiro" />
+                    <LazyLoadImage
+                      src={logoBarber}
+                      alt="Kenny Barbeiro"
+                      loading="lazy"
+                    />
                   </Link>
                 </Style.CardBarberImg>
               </motion.div>

@@ -31,12 +31,6 @@ export default function Navbar() {
         </Style.LogoNavbar>
         <ul>
           <li>
-            <Style.NavbarLink
-              href="https://api.whatsapp.com/send?phone=555511933352555"
-              target="_blank"
-            >
-              +55 11 93335-2555
-            </Style.NavbarLink>
             <Style.NavbarLink onClick={() => handleLanguage(Languagens.PT)}>
               BR
             </Style.NavbarLink>
@@ -56,13 +50,6 @@ export default function Navbar() {
         </div>
         <ul>
           <li>
-            <Style.NavbarLink
-              href="https://api.whatsapp.com/send?phone=555511933352555"
-              target="_blank"
-              onClick={toggleMobileMenu}
-            >
-              +55 11 93335-2555
-            </Style.NavbarLink>
             <Style.NavbarLink
               onClick={() => {
                 handleLanguage(Languagens.PT);

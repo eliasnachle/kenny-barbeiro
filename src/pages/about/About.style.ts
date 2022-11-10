@@ -26,20 +26,6 @@ export const Title = styled('h1')`
   }
 `;
 
-export const ContainerImg = styled('div')`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 50vh;
-  overflow: hidden;
-  width: 100%;
-  z-index: 99;
-  img {
-    height: 50vh;
-    object-fit: cover;
-  }
-`;
-
 export const Container = styled('div')`
   display: flex;
   flex-direction: column;

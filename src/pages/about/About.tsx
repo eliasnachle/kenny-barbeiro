@@ -2,9 +2,17 @@ import Navbar from '../../components/navbar/Navbar';
 import * as Style from './About.style';
 import backgroundImg from '../../assets/kenny.jpg';
 import { motion, useTransform, useScroll } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function About() {
+  const [imageLoading, setImageLoading] = useState(true);
+  const [pulsing, setPulsing] = useState(true);
+
+  const imageLoaded = () => {
+    setImageLoading(false);
+    setTimeout(() => setPulsing(false), 600);
+  };
+
   const { scrollYProgress } = useScroll();
   const scale = useTransform(
     scrollYProgress,
@@ -45,14 +53,21 @@ export default function About() {
         <motion.div variants={titleAnimation} initial="hidden" animate="show">
           <Style.Title>Kenny Barbeiro</Style.Title>
         </motion.div>
-        <Style.ContainerImg>
+        <div
+          className={`${pulsing ? 'pulse' : ''} loadable`}
+          style={{ background: '#363636' }}
+        >
           <motion.img
+            initial={{ scale: 1.0, opacity: 0 }}
+            animate={{ opacity: imageLoading ? 0 : 1 }}
+            transition={{ opacity: { delay: 0.5, duration: 0.4 } }}
+            onLoad={imageLoaded}
+            width="100%"
             src={backgroundImg}
             alt="Kenny Barbeiro"
             style={{ scale: scale }}
-            initial={{ scale: 1.0 }}
           />
-        </Style.ContainerImg>
+        </div>
         <Style.Container>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.

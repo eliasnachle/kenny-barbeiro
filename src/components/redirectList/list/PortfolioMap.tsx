@@ -1,6 +1,6 @@
-import { AiOutlineCalendar } from 'react-icons/ai'
-import { MdOutlineCastForEducation } from 'react-icons/md'
-import { FaGraduationCap } from 'react-icons/fa'
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { MdOutlineCastForEducation } from 'react-icons/md';
+import { FaGraduationCap } from 'react-icons/fa';
 
 export const portfolioMap = {
   titlePT: 'Onde me encontrar?',
@@ -22,7 +22,7 @@ export const portfolioMap = {
       namePT: 'Curso Presencial',
       nameEN: 'Presential Course',
       icon: <FaGraduationCap />,
-      url: 'https://hotmart.com/pt-br/marketplace/produtos/afro-estima-com-kennybarbeiro-curso/N65309325F',
+      url: 'https://www.instagram.com/kennybarbeiropro/?igshid=YmMyMTA2M2Y%3D',
     },
   ],
-}
+};
