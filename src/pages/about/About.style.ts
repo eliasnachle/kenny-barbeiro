@@ -10,11 +10,12 @@ export const KennyBackground = styled('div')`
 `;
 
 export const Title = styled('h1')`
+  font-family: 'Noto Serif Display', serif;
   text-align: center;
   font-size: 10em;
   font-weight: 400;
   letter-spacing: 1.5px;
-  color: #fff;
+  color: #c2a17a;
   @media screen and (max-width: 1920px) {
     font-size: 8em;
   }
@@ -32,11 +33,12 @@ export const Container = styled('div')`
   align-items: center;
   padding: 2em 3em;
   h1 {
+    color: #c2c2c2;
+    font-size: 3em;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 400;
     font-family: 'Noto Serif Display', serif;
-    color: #fed168;
-    font-size: 5em;
-    letter-spacing: -1px;
-    padding-bottom: 1.5rem;
   }
   p {
     max-width: 1520px;

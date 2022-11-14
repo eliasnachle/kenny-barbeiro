@@ -11,14 +11,18 @@ export const Navbar = styled('div')`
   ul {
     li {
       list-style: none;
+      span {
+        font-size: 16px;
+        color: #fff;
+      }
     }
   }
-  @media screen and (max-width: 920px) {
+  /* @media screen and (max-width: 920px) {
     padding: 1em 25px;
     ul {
       display: none;
     }
-  }
+  } */
 `;
 
 export const NavbarLink = styled('a')`
