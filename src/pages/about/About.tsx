@@ -3,7 +3,7 @@ import * as Style from './About.style';
 import backgroundImg from '../../assets/kenny.jpg';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import aboutMe from './AboutMe';
+import aboutMe, { tsTechnique } from './AboutMe';
 
 export default function About() {
   const [imageLoading, setImageLoading] = useState(true);
@@ -72,6 +72,8 @@ export default function About() {
         <Style.Container>
           <h1>Sobre Mim</h1>
           <p>{aboutMe}</p>
+          <h1>O INÍCIO DA TÉCNICA TS</h1>
+          <p>{tsTechnique}</p>
         </Style.Container>
       </motion.div>
     </>
