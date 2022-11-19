@@ -2,7 +2,16 @@ import moment from 'moment';
 
 const kennyAge = moment().diff('2000-04-11', 'years');
 
-const aboutMe = `Prazer meu nome é Kennedy, tenho ${kennyAge} anos  sou de São Matheus zona leste, sou Barbeiro, afro descendente.
+export const titleAboutPT = `Sobre Mim`;
+
+export const titleAboutEN = `About Me`;
+
+export const tsTitlePT = `O Início da Técnica TS`;
+
+export const tsTitleEN = `
+The Beginning of the TS Technique`;
+
+export const aboutMePT = `Prazer meu nome é Kennedy, tenho ${kennyAge} anos  sou de São Matheus zona leste, sou Barbeiro, afro descendente.
 A minha profissão de barbeiro  se desenvolveu ao meus 13 anos com meu pai e com os 17 anos tive um convite para trabalhar em um salão no centro de São Paulo, fundada por africanos, aceitei o convite  buscando minha independência profissional e tendo o público 90% afro, então me especializei em corte Afro com eles do salão chamado LeepJam e isso é o diferencial.
 Venho de uma família humilde, Tenho uma história que foi difícil sobre essa sociedade que nos oprimi.
 Eu agradeço a Deus por meus pais ser sido país novos e ser responsáveis ao ponto de não deixar faltar nada dentro de casa, hoje em dia já temos uma estabilidade bacana.
@@ -14,7 +23,19 @@ Eu pensei e hoje em dia estou preparando um curso que vai começar dia 04/10/202
 Fui convidado em 2022 para o salão @vizuhairclub é o salão que atuo hoje considerado o Maior salão com diversidade de cabelo e talentos com cabelos Crespos/Cacheados e ondulados.
 Em 2022 tudo mudou, hoje tenho o meu reconhecimento internacional, cliente e alunos! Sou mentor de curso a 3 anos e me orgulho muito de ter transbordado experiência para muitas pessoas de São Paulo e para todas pessoas que trabalhou comigo.`;
 
-export const tsTechnique = `Venho trazer pra vocês um pedacinho da minha história e de como essa técnica mudou a minha vida.
+export const aboutMeEN = `Pleasure my name is Kennedy, I'm ${kennyAge} years old I'm from São Matheus east side, I'm a Barber, afro descendant.
+My profession as a barber developed at the age of 13 with my father and at the age of 17 I was invited to work in a salon in the center of São Paulo, founded by Africans, I accepted the invitation seeking my professional independence and having the public 90% afro, so I specialized in Afro cut with them from the salon called LeepJam and that's the differential.
+I come from a humble family, I have a story that was difficult about this society that oppressed us.
+I thank God for my parents being a new country and being responsible to the point of not missing anything at home, nowadays we already have a nice stability.
+I even took courses "Aircraft Maintenance and Aerospace Engineering" I managed to finish the basics, because I couldn't continue because they were far from my home and my work, my parents have their responsibilities and I had mine as soon as I started work, so I accomplished my goals through a lot of effort and work, because the course is expensive and because I spent time on the street, I was mentally and physically tired, a lot of effort was made from “Monday to Friday, course and work” Saturday I only worked.
+A very independent career (bus tickets come out of my money, breakfast, lunch and dinner, I left home at 5:00 am and got home at 11:00 pm, unfortunately I didn't have the stability to maintain my other dream, which is to fly a plane, to be an aircraft mechanic, I dream about it!
+Today I work as a barber. I was always sure that if I dedicated myself, success would come.
+Progress was arriving, I went to a medium standard salon (barbearia marconi) on 09/27/2019 and there people started to recognize my work more, my audience is afro hair, and because of my dedication, people around me told me ! ( kenny in my hood the guys don't know how to cut afro why don't you teach the course?
+I thought and today I am preparing a course that will start on 10/04/2020, I am anxious to pass on my experience, I get emotional because many people doubted and still doubt that I am capable of being an Afro educator. And after that, when I create my stability of living alone and having my independent life, I will continue my dreams.
+I was invited in 2022 to the @vizuhairclub salon, it is the salon that I work in today, considered the largest salon with hair diversity and talents with Curly / Curly and wavy hair.
+In 2022 everything changed, today I have my international recognition, clients and students! I've been a course mentor for 3 years and I'm very proud to have overflowed experience to many people in São Paulo and to all the people who worked with me.`;
+
+export const tsTechniquePT = `Venho trazer pra vocês um pedacinho da minha história e de como essa técnica mudou a minha vida.
 Eu corto cabelo desde os meus 13 anos de idade, aprendi com o meu pai que é barbeiro. Quando completei 16 anos de idade fui convidado a participar de uma equipe de barbeiros que fica localizado no centro de São Paulo, todos da barbearia eram senegaleses “africanos“. Trabalhei com eles durante três anos e como o público do salão era 85% composto por africanos, eu aprendi muito com eles e como lidar com cabelos crespos e cacheados, obtendo com o tempo o conhecimento do visagismo, que era sempre moldar o corte para encaixar em cada rosto e traços que era diferentes um dos outros e as curvaturas que também eram diferentes.
 Até aí eu nunca havia cortado cabelo feminino, tinha uma moça que era apaixonada por cortes curtos e ela disse que eu tinha muito talento em cabelo masculino cacheado e crespo. Um dia ela chegou no salão pedindo pra que eu cortasse o cabelo dela e eu recusei a cortar o cabelo dela umas cinco vezes dizendo que eu não fazia cortes femininos.
 Então eu parei e me questionei do por que eu estava dando aquela resposta, comecei a pensar que independente do gênero, se trata de afro estima e eu deveria entregar um bom trabalho para essas pessoas.
@@ -32,4 +53,21 @@ Depois de ministrar alguns cursos, ensinando a vários alunos de diversas partes
 Passei 3 anos nessa barbearia, onde todos os barbeiros que foram colegas de trabalho aprenderam esse corte TaperedCut comigo, deixei meu legado nessa barbearia e fiz com que o público afro ficasse cada vez maior e fico feliz por ter deixado esse meu legado.
 Em fevereiro de 2022 resolvi ir para um salão de cabeleireiro, pois eu senti que o meu público feminino precisava de um ambiente em que se sentisse mais confortável e acolhido, já que na barbearia eu percebia que as minhas cliente se sentiam incomodadas com os assuntos dos barbeiros que estavam ao lado. Hoje atendo em uma sala exclusiva, pensando no conforto e bem estar dos meus clientes, além de possuir uma boa infraestrutura para ministrar meus cursos presenciais.`;
 
-export default aboutMe;
+export const tsTechniqueEN = `I come to bring you a little piece of my story and how this technique changed my life.
+I cut hair since I was 13 years old, I learned from my father who is a barber. When I turned 16 I was invited to join a team of barbers located in the center of São Paulo, everyone in the barber shop was “African” Senegalese. I worked with them for three years and as the salon's audience was 85% African, I learned a lot from them and how to deal with frizzy and curly hair, gaining over time the knowledge of visagism, which was always shaping the cut to fit in each face and features that were different from each other and the curvatures that were also different.
+Until then I had never cut women's hair, there was a girl who was passionate about short cuts and she said that I had a lot of talent in curly and curly men's hair. One day she arrived at the salon asking me to cut her hair and I refused to cut her hair about five times saying that I didn't do feminine cuts.
+So I stopped and asked myself why I was giving that answer, I started to think that regardless of gender, it is about afro esteem and I should deliver good work to these people.
+The next time she went to the salon I agreed to cut her hair and she showed me a reference to a short original hair
+American. At that time I only used straight scissors, but I managed to cut it, but I felt that I had to perfect this Tapered Cut. After cutting her hair, I received many compliments, but I told her that I shouldn't tell anyone because I didn't feel prepared to do it on other people.
+
+About a month went by and I started to receive female clients who stopped this same client on the street to ask where she cut it and that she recommended it to me. From then on, I just started to improve more and more, with more ideas for the Tapered Cut.
+I found out about curved scissors with a man from Afghanistan who sold scissors in a barber shop, I thought that with black power hair and the Tapered Cut cut it would make a lot of sense to do it with curved scissors, to precisely bring a more rounded cut, that's when I I bought these scissors and started getting to know them and the way they work.
+
+At the beginning of 2020, I started to receive many messages from people wanting to take a course with me, as my work was already starting to have a high reach in the United States and Brazil.
+I realized that I needed a more beautiful space with more lighting so that I could deliver posts with more visual quality. So, I moved to a traditional barbershop and when I arrived there were nine barbers, all of whom specialized in straight hair and only one barber who specialized in afro hair.
+Six professionals from other salons got in touch with me asking if I gave a course and I said no because I didn't know how to give a course and if I was apt for it. One of these professionals who got in touch with me said "when you're ready, get in touch with us because we really want to learn the technique you use in these cuts". About 3 months passed and they set up a group and said "you already have your first class, just schedule the date and tell us the cost of the course". After that day I thought that everything has its time and that everything happened at the right time.
+I scheduled the date with them and the first course took place, there was a lot of positive feedback and there was only one negative one, which was "Kenny, you need a team, it gets too heavy to do everything alone".
+
+After teaching some courses, teaching several students from different parts of Brazil, I improved my teaching methods and my TS Technique every day.
+I spent 3 years in this barbershop, where all the barbers who were colleagues at work learned this TaperedCut cut with me, I left my legacy in this barbershop and made the Afro public grow bigger and bigger and I am happy to have left this legacy of mine.
+In February 2022 I decided to go to a hairdressing salon, as I felt that my female audience needed an environment in which they felt more comfortable and welcomed, since at the barbershop I realized that my clients felt uncomfortable with the subjects of barbers who were next door. Today I serve in an exclusive room, thinking about the comfort and well-being of my clients, in addition to having a good infrastructure to teach my face-to-face courses.`;

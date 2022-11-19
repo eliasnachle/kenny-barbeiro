@@ -2,10 +2,22 @@ import Navbar from '../../components/navbar/Navbar';
 import * as Style from './About.style';
 import backgroundImg from '../../assets/kenny.jpg';
 import { motion, useTransform, useScroll } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import aboutMe, { tsTechnique } from './AboutMe';
+import { useEffect, useState, useContext } from 'react';
+import {
+  titleAboutPT,
+  titleAboutEN,
+  tsTitlePT,
+  tsTitleEN,
+  aboutMePT,
+  aboutMeEN,
+  tsTechniquePT,
+  tsTechniqueEN,
+} from './AboutMe';
+import { LanguageContext } from '../../context/LanguageContext';
+import { Languagens } from '../../languagens/LanguagemEnum';
 
 export default function About() {
+  const { language } = useContext(LanguageContext);
   const [imageLoading, setImageLoading] = useState(true);
   const [pulsing, setPulsing] = useState(true);
 
@@ -70,10 +82,10 @@ export default function About() {
           />
         </div>
         <Style.Container>
-          <h1>Sobre Mim</h1>
-          <p>{aboutMe}</p>
-          <h1>O INÍCIO DA TÉCNICA TS</h1>
-          <p>{tsTechnique}</p>
+          <h1>{language == Languagens.PT ? titleAboutPT : titleAboutEN}</h1>
+          <p>{language == Languagens.PT ? aboutMePT : aboutMeEN}</p>
+          <h1>{language == Languagens.PT ? tsTitlePT : tsTitleEN}</h1>
+          <p>{language == Languagens.PT ? tsTechniquePT : tsTechniqueEN}</p>
         </Style.Container>
       </motion.div>
     </>

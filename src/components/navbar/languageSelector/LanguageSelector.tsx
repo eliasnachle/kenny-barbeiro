@@ -25,7 +25,6 @@ export default function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
-    console.log('oi');
     setIsOpen(!isOpen);
   };
 
