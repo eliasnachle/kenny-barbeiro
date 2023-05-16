@@ -1,26 +1,30 @@
-import { Key, useContext } from 'react';
-import * as Style from './ListComponent.style';
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
-import { LanguageContext } from '../../../context/LanguageContext';
-import { Languagens } from '../../../languagens/LanguagemEnum';
-import { Link } from 'react-router-dom';
+import { Key, useContext } from "react";
+import * as Style from "./ListComponent.style";
+import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
+import { LanguageContext } from "../../../context/LanguageContext";
+import { Languagens } from "../../../languagens/LanguagemEnum";
+import { Link } from "react-router-dom";
 
 type RedirectlistMapProps = {
   titlePT: string;
   titleEN: string;
   listItems: {
+    name: string;
     namePT: string;
     nameEN: string;
     icon: ReactJSXElement;
     url: string;
+    isActive: boolean;
   }[];
 };
 
 interface IListMap {
+  name: string;
   namePT: string;
   nameEN: string;
   icon: ReactJSXElement;
   url: string;
+  isActive: boolean;
 }
 
 const ListComponent = ({
@@ -37,14 +41,25 @@ const ListComponent = ({
           ? redirectListMap.titlePT
           : redirectListMap.titleEN}
       </span>
-      {redirectListMap.listItems.map((element: IListMap, item: Key) => (
-        <a key={item} href={element.url} target="_blank">
-          <Style.Redirect>
-            {element.icon}
-            {language == Languagens.PT ? element.namePT : element.nameEN}
-          </Style.Redirect>
-        </a>
-      ))}
+      {redirectListMap.listItems.map((element: IListMap, item: Key) => {
+        if (element.isActive == false) {
+          return (
+            <Style.Redirect key={item}>
+              {element.icon}
+              {language == Languagens.PT ? element.namePT : element.nameEN}
+            </Style.Redirect>
+          );
+        } else {
+          return (
+            <a key={item} href={element.url} target="_blank">
+              <Style.Redirect>
+                {element.icon}
+                {language == Languagens.PT ? element.namePT : element.nameEN}
+              </Style.Redirect>
+            </a>
+          );
+        }
+      })}
     </Style.ListComponent>
   );
 };
