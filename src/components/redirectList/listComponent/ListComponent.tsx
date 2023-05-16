@@ -9,22 +9,22 @@ type RedirectlistMapProps = {
   titlePT: string;
   titleEN: string;
   listItems: {
-    name: string;
+    name?: string;
     namePT: string;
     nameEN: string;
     icon: ReactJSXElement;
     url: string;
-    isActive: boolean;
+    isActive?: boolean;
   }[];
 };
 
 interface IListMap {
-  name: string;
+  name?: string;
   namePT: string;
   nameEN: string;
   icon: ReactJSXElement;
   url: string;
-  isActive: boolean;
+  isActive?: boolean;
 }
 
 const ListComponent = ({
